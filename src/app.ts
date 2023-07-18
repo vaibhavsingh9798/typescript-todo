@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 app.use(todoRoutes)
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Hello, world!');
+  res.status(200).send('Home Page');
 });
 
 app.listen(port, () => {
